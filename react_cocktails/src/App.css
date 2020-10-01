@@ -4,14 +4,32 @@
 
 .drink-card{
   height: 350px;
-  width: calc(90% / 3);
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 25px;
 }
 .card-content{
-  height: 200px;
-  width: 80%;
+  height: 100%;
+  width: 100%;
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.card-top{
+  display: flex;
+  height: 70%;
+  width: 100%;
+}
+
+.card-info{
+  width: 50%;
+}
+.card-top img{
+  width: 50%;
+  max-height: 100%;
+  border-radius: 15px;
 }
