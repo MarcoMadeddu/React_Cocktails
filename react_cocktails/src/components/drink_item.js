@@ -1,4 +1,5 @@
 import React from 'react';
+
 export default function drinkItem({drink}){
     return(
         <div className="drink-card col-md-6 col-12">
@@ -6,10 +7,12 @@ export default function drinkItem({drink}){
                 <div className="card-top">
                     <div className="card-info">
                         <h2>{drink.strDrink}</h2>
+                        <p>{drink.strInstructions}</p>
                     </div>
-                    <img src={drink.strDrinkThumb} alt="" srcset=""/>
+                    <div className="card-img">
+                        <img src={drink.strDrinkThumb} alt="" srcset=""/>
+                    </div>
                 </div>
-                <p>{drink.strInstructions}</p>
             </div>
         </div>
 

@@ -2,7 +2,7 @@ import React from 'react';
 export default function menuBar(){
     return(
         <ul className="navbar-nav">
-            <li className="nav-item active">
+            {/* <li className="nav-item active">
                 <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
             </li>
             <li className="nav-item">
@@ -20,6 +20,6 @@ export default function menuBar(){
                     <a className="dropdown-item" href="/">Another action</a>
                     <a className="dropdown-item" href="/">Something else here</a>
                 </div>
-            </li>
+            </li> */}
         </ul>
     )}

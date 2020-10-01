@@ -4,7 +4,8 @@ import MenuBar from './menubar';
 export default function navBar({onSearchTerm}){
     return(
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a className="navbar-brand" href="/">Navbar</a>
+        
+       <a href="/"> <i class="fas fa-cocktail"></i>Drinks</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
         </button>

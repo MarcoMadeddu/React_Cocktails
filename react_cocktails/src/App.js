@@ -2,6 +2,7 @@ import React , {Component}from 'react';
 import './App.css';
 import DrinkList from './components/drink_list';
 import NavBar from './components/navbar';
+import Banner from './components/banner';
 //CONST & VARS
 const APIURL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
 
@@ -27,22 +28,24 @@ class App extends Component{
     fetchCall(term).then(res => {
       this.setState({
         cocktails : res.drinks,
-      })
+     })
       console.log(res);
   })
   }
 
   componentDidMount(){
-    this.searchCocktail('mojito');
+    this.searchCocktail('');
   }
 
 
   render(){
     return (
       <>
-      <NavBar></NavBar>
+      <NavBar onSearchTerm = {this.searchCocktail}></NavBar>
      <div className="container">
-      <DrinkList drinks={this.state.cocktails}> </DrinkList>
+        {/* <Banner drinks={this.state.cocktails}> </Banner> */}
+        <DrinkList drinks={this.state.cocktails}> </DrinkList>
+      
      </div>
      </>
     );
